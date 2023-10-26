@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="container-header">
+            <div class="container-header-img">
+                <img src="../../img/theme.jpg" alt="">
+            </div>
+        </div>
+        <div class="container-body">
+            <div id="snackbar"></div>
+            <div class="return">
+                <a href="../index.html">Quay lại</a>
+            </div>
+            <div class="cart-name">GIỎ HÀNG CỦA BẠN</div>
+            <div class="cart-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Loại sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+                <div class="total">
+                    <div class="total-t">Total: </div>
+                    <div class="total-count"></div>
+                </div>
+                <div class="btn-checkout">
+                    <button onclick="submitCheckout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="footer-item">
+                <div class="ft-flex">
+                    <div class="ft-flex-item">
+                        <div class="ft-h">ĐỊA CHỈ MUA HÀNG</div>
+                        <div class="ft-desc">
+                            <p class="ft-desc-h">CÔNG TY CỔ PHẦN THƯƠNG MẠI TRẦN ANH</p>
+                            <p>Địa Chỉ : Số 33 Ngõ 178 phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội
+                            </p>
+                            <ul>
+                                <li>Chi Nhánh : Số 189 Lạc Long Quân - Tây hồ </li>
+                                <li>Chi Nhánh : Số 263 Nguyễn Văn Cừ - Long Biên</li>
+                                <li>Chi Nhanh : Số 16 Lê Lợi - Phường 4 -Quận Gò Vấp - TP HCM</li>
+                            </ul>
+                            <p>Điện thoại: 0819 329 999 & 0911 616 193 & 024 6328 9333 & 0963 872 333 </p>
+                            <p>Email: phuongdung992012@gmail.com</p>
+                            <div>https://maytinhtrananh.vn</div>
+                        </div>
+                    </div>
+                    <div class="ft-flex-item">
+                        <div class="ft-h">THÔNG TIN VỀ TRẦN ANH</div>
+                        <div class="ft-desc">
+                            <div>Sơ đồ chỉ đường</div>
+                            <div>Lịch làm việc</div>
+                            <div>Tuyển nhân viên</div>
+                        </div>
+                    </div>
+                    <div class="ft-flex-item">
+                        <div class="ft-h">HỖ TRỢ KHÁCH HÀNG</div>
+                        <div class="ft-desc">
+                            <div>Chính sách bảo vệ thông tin</div>
+                            <div>Chính sách thanh toán</div>
+                            <div>Chính sách vận chuyển</div>
+                            <div>Chính sách bảo hành</div>
+                            <div>Chính sách đổi trả hàng</div>
+                        </div>
+                    </div>
+                    <div class="ft-flex-item">
+                        <div class="ft-h">HÃY GỌI CHO CHÚNG TÔI ĐỂ ĐƯỢC TƯ VẤN</div>
+                        <div class="ft-desc">
+                            <div class="item-hotline">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="hotline">Hotline: 097.185.1111</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay">
+        <div class="confirm-bill">
+            <div class="confirm-sb">
+                <div>Xác nhận mua hàng ?</div>
+                <div class="">
+                    <button onclick="confirmSm()">Xác nhận</button>
+                    <button onclick="cancelSm()">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./cart.js"></script>
+
+</html>

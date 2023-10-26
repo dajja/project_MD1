@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg-img">
+        <img src="../../img/main.png" alt="">
+    </div>
+    <div class="rgs-container">
+        <div class="rgs-form">
+            <div class="register">
+                <h2>REGISTER</h2>
+                <form onsubmit="formSub(event)">
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" placeholder="Your name" id="username"> <br>
+                    <div class="error"></div>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" placeholder="Your email" id="email"> <br>
+                    <div id="error"></div>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                    <i id="eye1" class="fa-solid fa-eye"></i>
+                    <div class="error"></div> <br>
+                    <label for="cfpassword">Confirm password</label> <br>
+                    <input type="password" name="cfpassword" id="cfpassword" autocomplete="off">
+                    <i id="eye2" class="fa-solid fa-eye"></i>
+                    <div class="error"></div> <br>
+                    <div style="display: flex;align-items: center;">
+                        <button id="btn">Register</button> &nbsp;
+                        <p>Đã có tài khoản? <a class="to-login" href="../login/login.html">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+<script src="./register.js"></script>
+
+</html>

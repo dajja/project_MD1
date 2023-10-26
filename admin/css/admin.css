@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin {
+    height: 730px;
+}
+.admin-exit {
+    margin: 10px 0;
+}
+.admin-layout {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.admin-l-sidebar {
+    width: 20%;
+    background-color: slategray;
+}
+
+.admin-l-sidebar-1 {
+    text-align: center;
+}
+
+.sidebar-manage {
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.sidebar-manage .sidebar-manage-box {
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.sidebar-manage-box:hover {
+    background-color: rgb(156, 243, 243);
+}
+
+.admin-l-main {
+    width: 80%;
+    border: 1px solid aqua;
+}
+
+.main-content {
+    margin: 10px;
+    border: 1px solid;
+    height: -webkit-fill-available;
+}
+
+.main-content-1,
+.main-content-2 {
+    padding: 15px 20px;
+}
+
+.header-content {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.main-content-sort {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.main-content-sort button {
+    background-color: rgb(179, 202, 225);
+}
+
+.main-content-sort-filter {
+    display: flex;
+    width: 80%;
+}
+
+.main-content-sort-filter input {
+    width: 80%;
+}
+
+.main-content-sort-filter input,
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.main-content-sort-filter button {
+    background-color: rgb(179, 202, 225);
+}
+
+.paginate {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.paginate-info {
+    padding: 10px;
+}
+
+.active-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-edit,
+.btn-status {
+    width: 40%;
+}
+
+.active-icon, .accepted-icon {
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(35, 238, 35);
+}
+
+.unactive-icon, .denied-icon {
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: red;
+}
+.waiting-icon {
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(127, 124, 124);
+}
+
+/* form edit user */
+.form-edit-user,
+.form-add-category {
+    margin: 40px 0;
+}
+
+#editUserForm,
+#newProductForm {
+    margin: 0 auto;
+    width: max-content;
+    line-height: 30px;
+}
+
+#editUserForm label {
+    font-weight: 600;
+}
+
+#editUserForm input,
+select {
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+
+#editUserForm img,
+#newProductForm img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 5px #999999;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#editUserForm>button,
+.form-add-category>div>button,
+#newProductForm>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#editUserForm>button:hover,
+.form-add-category>div>button:hover,
+#newProductForm>button:hover {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.form-add-category input {
+    padding: 6px 10px;
+    margin: 10px 0;
+}
+
+.false-alert {
+    color: red;
+}
+
+.true-alert {
+    color: rgb(52, 222, 52);
+}
+
+/* form edit product */
+#newProductForm input,
+select {
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+
+.form-add-category {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-add-category>table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pd-error {
+    color: red;
+}
+
+.tr-product > td {
+    text-align: center;
+}
+.img-product {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.img-product > img {
+    width: 90%;
+    height: 100%;
+}
+
+/* snackbar thong bao */
+#snackbar {
+    visibility: hidden;
+    min-width: 240px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30px;
+    top: 30px;
+    font-size: 15px;
+}
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbar.success {
+    background-color: rgb(13, 200, 13);
+}
+#snackbar.warning {
+    background-color: rgb(250, 32, 32);
+}
+@-webkit-keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 30px;
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 30px;
+        opacity: 1;
+    }
+}

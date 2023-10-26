@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <img src="../../img/main.png" alt="">
+    </div>
+    <div class="lg-container">
+        <div class="form">
+            <div class="login">
+                <h2>LOGIN</h2>
+                <form onsubmit="login(event)">
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" placeholder="Your email" id="email"> <br>
+                    <div class="error"></div> <br>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                    <i id="eye" class="fa-solid fa-eye"></i>
+                    <div class="error"></div> <br>
+                    <div style="display: flex;align-items: center;gap: 10px;">
+                        <button id="btn">Login</button>
+                        <p>Chưa có tài khoản? <a class="to-register" href="../register/register.html">Sign up</a></p>
+                    </div>
+                    <div onclick="forgotPw()" class="forgot-pw">Quên mật khẩu?</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="snackbar"></div>
+    <div id="overlay">
+        <div class="reset-ps" style="display: none;">
+            <div class="reset-info">
+                <div id="de">Nhập lại email của bạn</div>
+                <div class="close" onclick="closeRs()">X</div>
+                <input type="text" placeholder="nhap email" id="resetEmail">
+                <div class="error"></div>
+                <button onclick="submitReset()" id="btn-reset">OK</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+<script src="permisson.js"></script>
+</html>

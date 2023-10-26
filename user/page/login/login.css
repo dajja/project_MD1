@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-img {
+    width: 100%;
+    height: 728px;
+}
+.bg-img img {
+    width: 100%;
+    height: 100%;
+}
+.lg-container {
+    margin-top: -600px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login {
+    padding: 30px;
+    border: 1px solid black;
+    height: max-content;
+    box-shadow: 0px 0px 5px 5px #999999;
+    background-color: white;
+}
+.login h2 {
+    text-align: center;
+}
+.login input {
+    width: 90%;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+.error {
+    color: red;
+}
+.fa-eye,
+.fa-eye-slash {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+#btn {
+    background-color: rgb(175, 171, 171);
+    border: none;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+#btn:hover {
+    background-color: black;
+    color: white;
+}
+.to-register {
+    text-decoration: none;
+    color: black;
+}
+.to-register:hover {
+    color: aqua;
+}
+.forgot-pw {
+    cursor: pointer;
+    width: max-content;
+}
+.forgot-pw:hover {
+    color: aqua;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.reset-ps {
+    width: max-content;
+    border: 1px solid;
+    padding: 20px;
+    line-height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: white;
+    height: max-content;
+}
+
+.reset-ps input {
+    padding: 5px 10px;
+    width: 90%;
+}
+
+.close {
+    position: absolute;
+    margin-top: -60px;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+#snackbar {
+    visibility: hidden;
+    min-width: 240px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30px;
+    top: 30px;
+    font-size: 15px;
+}
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbar.success {
+    background-color: rgb(13, 200, 13);
+}
+#snackbar.warning {
+    background-color: rgb(250, 32, 32);
+}
+@-webkit-keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 30px;
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 30px;
+        opacity: 1;
+    }
+}

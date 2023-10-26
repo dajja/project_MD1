@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+    td {
+        font-weight: 400;
+    }
+    th,td:nth-child(5),td:nth-child(7) {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="admin">
+        <div class="admin-layout">
+            <div class="admin-l-sidebar">
+                <div class="admin-l-sidebar-1">
+                    <h3>ADMINISTRATOR PAGE</h3>
+                    <div id="admin"></div>
+                    <div class="sidebar-manage">
+                        <div class="sidebar-manage-box">Quản lý người dùng</div>
+                        <div class="sidebar-manage-box">Quản lý sản phẩm</div>
+                        <div class="sidebar-manage-box">Quản lý đơn hàng</div>
+                    </div>
+                    <button class="admin-exit" onclick="signOut()">Đăng xuất</button>
+                </div>
+            </div>
+            <div class="admin-l-main">
+                <div class="main-content">
+                </div>
+            </div>
+            <div id="snackbar"></div>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="container-header">
+            <div class="container-header-img">
+                <div class="icon-main"></div>
+                <img src="../img/theme.jpg" alt="">
+            </div>
+            <div class="container-header-input">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="container-body">
+            <div class="body-navbar">
+                <div class="body-navbar-list" id="navbar-list">
+                    <i class="fa-solid fa-bars"></i>
+                    <div>DANH MỤC SẢN PHẨM</div>
+                    <div class="dropdown-content" id="dropdown">
+                    </div>
+                </div>
+                <div class="body-navbar-user">
+                    <div class="lg-rg">
+                        <a href="./register/register.html">Đăng kí</a>
+                        <a href="./login/login.html">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <div id="snackbar"></div>
+            <div class="body-slide">
+                <div class="body-slide-slize">
+                    <div class="slide-img">
+                        <img name="slide" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="body-items">
+                <div class="category-name">
+                    <div class="category-type"></div>
+                </div>
+                <div class="items" id="items">
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="footer-item">
+                <div class="ft-flex">
+                    <div class="ft-flex-item">
+                        <div class="ft-h">ĐỊA CHỈ MUA HÀNG</div>
+                        <div class="ft-desc">
+                            <p class="ft-desc-h">CÔNG TY CỔ PHẦN THƯƠNG MẠI TRẦN ANH</p>
+                            <p>Địa Chỉ : Số 33 Ngõ 178 phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội
+                            </p>
+                            <ul>
+                                <li>Chi Nhánh : Số 189 Lạc Long Quân - Tây hồ </li>
+                                <li>Chi Nhánh : Số 263 Nguyễn Văn Cừ - Long Biên</li>
+                                <li>Chi Nhanh : Số 16 Lê Lợi - Phường 4 -Quận Gò Vấp - TP HCM</li>
+                            </ul>
+                            <p>Điện thoại: 0819 329 999 & 0911 616 193 & 024 6328 9333 & 0963 872 333 </p>
+                            <p>Email: phuongdung992012@gmail.com</p>
+                            <div>https://maytinhtrananh.vn</div>
+                        </div>
+                    </div>
+                    <div class="ft-flex-item">
+                        <div class="ft-h">THÔNG TIN VỀ TRẦN ANH</div>
+                        <div class="ft-desc">
+                            <div>Sơ đồ chỉ đường</div>
+                            <div>Lịch làm việc</div>
+                            <div>Tuyển nhân viên</div>
+                        </div>
+                    </div>
+                    <div class="ft-flex-item">
+                        <div class="ft-h">HỖ TRỢ KHÁCH HÀNG</div>
+                        <div class="ft-desc">
+                            <div>Chính sách bảo vệ thông tin</div>
+                            <div>Chính sách thanh toán</div>
+                            <div>Chính sách vận chuyển</div>
+                            <div>Chính sách bảo hành</div>
+                            <div>Chính sách đổi trả hàng</div>
+                        </div>
+                    </div>
+                    <div class="ft-flex-item">
+                        <div class="ft-h">HÃY GỌI CHO CHÚNG TÔI ĐỂ ĐƯỢC TƯ VẤN</div>
+                        <div class="ft-desc">
+                            <div class="item-hotline">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="hotline">Hotline: 097.185.1111</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>

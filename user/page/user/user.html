@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <a href="../index.html">Quay lại</a>
+    <h2>Thông tin người dùng</h2>
+    <div class="main">
+        <div class="main-1">
+            <div class="main-1-img">
+                <img id="changeImg" src="" alt="">
+            </div>
+            <input type="file" onchange="changeImage(this)" />
+        </div>
+        <div class="main-2">
+            <div class="main-2-info">
+                <label for="name">Tên người dùng:</label> <br>
+                <input type="text" id="name"> <br>
+                <label for="email">Email: </label> <br>
+                <input type="text" disabled id="email"> <br>
+                <button onclick="changePassword()">Đổi mật khẩu</button>
+                <button onclick="resetInformation()">Xác nhận</button>
+            </div>
+            <div class="main-2-bills">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã Giao Dịch</th>
+                            <th>Sản phẩm</th>
+                            <th>Tổng tiền</th>
+                            <th>Thời gian </th>
+                            <th>Ghi chú</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-bill">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="snackbar"></div>
+    </div>
+    <div id="overlay">
+        <div class="reset-ps" style="display: none;">
+            <div class="reset-info">
+                <div id="mkm">Nhập mật khẩu mới</div>
+                <div class="close" onclick="closeRs()">X</div>
+                <input type="text" placeholder="nhập mật khẩu mới" id="newPass">
+                <div class="error"></div>
+                <button onclick="submitReset()" id="btn-reset">OK</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./user.js"></script>
+</html>
